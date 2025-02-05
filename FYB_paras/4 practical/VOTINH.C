@@ -1,0 +1,40 @@
+#include<stdio.h>
+int age(int a,int b);
+void main()
+{
+	int a,b,c;
+	clrscr();
+	printf("enter current year=");
+	scanf("%d",&a);
+	printf("enter born year=");
+	scanf("%d",&b);
+	if(a>0&&b>0)
+	{
+	c=age(a,b);
+	if(c>=80)
+	{
+		printf("take a rest");
+	}
+	else if(c<=18)
+	{
+		printf("unable to voting");
+	}
+	else
+	{
+		printf("able to voting");
+	}
+	}
+	else
+	{
+		printf("invalid age");
+	}
+	getch();
+}
+int age(int a,int b)
+{
+	int c;
+	c=a-b;
+	printf("this is your age=%d\n",c);
+	getch();
+	return c;
+}

@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a;
+	int num1,num2,result,choice;
+	clrscr();
+	do
+	{
+	printf("1. sum\n");
+	printf("2. minus\n");
+	printf("3. multyplication\n");
+	printf("4. division\n");
+	printf("enter your chois(1 to 4)\n");
+	scanf("%d",&choice);
+	printf("enter first nomber");
+	scanf("%d",&num1);
+	printf("enter second nomber");
+	scanf("%d",&num2);
+	switch(choice)
+	{
+		case(1): result=num1+num2;
+		printf("result=%d",result);
+		break;
+		case(2): result=num1-num2;
+		printf("result=%d",result);
+		break;
+		case(3): result=num1*num2;
+		printf("result=%d",result);
+		break;
+		case(4): result=num1/num2;
+		printf("result=%d",result);
+
+	}
+	printf("\nyou can try again y/n");
+	scanf(" %c",&a);
+	}
+	while(a=='y');
+	{
+		printf("thank's");
+	}
+	getch();
+}
+
+
+

@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,s=0;
+	clrscr();
+	for(a=1;a<=b;a++)
+	{
+		if(b%a==0)
+		{
+			printf("%d",a);
+			s++;
+		}
+	}
+	printf("\nyour total factor element=%d",s);
+	getch();
+}

@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,c;
+	clrscr();
+	printf("enter first int value=");
+	scanf("%d",&a);
+	printf("enter secand int value=");
+	scanf("%d",&b);
+	c=a+b;
+	printf("sum=%d",c);
+	c=a-b;
+	printf("minus=%d",c);
+	c=a*b;
+	printf("multyply=%d",c);
+	c=a/b;
+	printf("division=%d",c);
+	getch();
+}
